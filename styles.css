@@ -1,0 +1,309 @@
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.85;
+  z-index: -2;
+}
+
+/* top section */
+header {
+  padding: 10px 100px;
+  padding-bottom: 0;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.bb {
+  width: 4%;
+  filter: invert();
+}
+
+h2 {
+  font-family: 'Rubik Dirt', cursive;
+  color: white;
+  cursor: pointer;
+}
+
+/* main area */
+.main {
+  margin: 100px;
+  margin-bottom: 40px;
+  line-height: 2;
+}
+
+.main-talk {
+  width: 45%;
+  color: white;
+}
+
+h1 {
+  font-family: 'Inspiration', cursive;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #C4DFAA;
+}
+
+p {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 1.5rem;
+}
+
+h4, .last {
+  font-family: 'DynaPuff', cursive;
+}
+
+/* footer */
+.last {
+  font-size: 1rem;
+}
+
+footer {
+  text-align: center;
+  position: absolute;
+}
+
+.social {
+  width: 3%;
+  margin: 20px;
+  transition: 0.7s;
+}
+
+.social:hover {
+  transform: scale(1.5);
+}
+
+/* menu  */
+a {
+  text-decoration: none;
+  color: #C1EFFF;
+}
+
+a:hover {
+  color: #355764;
+}
+
+.selected {
+  color: #355764;
+}
+
+li {
+  list-style: none;
+}
+
+.menu2 {
+  font-family: 'DynaPuff', cursive;
+  font-size: 3rem;
+}
+
+.menu1 {
+  padding-top: 150px;
+}
+
+.menu {
+  position: fixed;
+  right: -100%;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.menu.active {
+  right: 0;
+}
+
+.wrong {
+  width: 4%;
+  height: 4%;
+  position: fixed;
+  right: -100%;
+  flex-direction: column;
+  transition: 0.3s;
+}
+
+/* button */
+.btn {
+  background: #90C8AC;
+  background-image: -webkit-linear-gradient(top, #90C8AC, #188b8f);
+  background-image: -moz-linear-gradient(top, #90C8AC, #188b8f);
+  background-image: -ms-linear-gradient(top, #90C8AC, #188b8f);
+  background-image: -o-linear-gradient(top, #90C8AC, #188b8f);
+  background-image: linear-gradient(to bottom, #90C8AC, #188b8f);
+  -webkit-border-radius: 14;
+  -moz-border-radius: 14;
+  border-radius: 14px;
+  color: #ffffff;
+  font-size: 19px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #C4DFAA;
+  background-image: -webkit-linear-gradient(top, #C4DFAA, #a5eb44);
+  background-image: -moz-linear-gradient(top, #C4DFAA, #a5eb44);
+  background-image: -ms-linear-gradient(top, #C4DFAA, #a5eb44);
+  background-image: -o-linear-gradient(top, #C4DFAA, #a5eb44);
+  background-image: linear-gradient(to bottom, #C4DFAA, #a5eb44);
+  text-decoration: none;
+}
+
+.btn {
+  border-style: none;
+  width: 10%;
+  font-size: 15px;
+  font-family: 'DynaPuff', cursive;
+}
+
+/* media query */
+@media (max-width:1070px) {
+  .menu {
+    width: 100%;
+    height: 20%;
+    position: relative;
+  }
+
+  li {
+    display: inline-block;
+    padding: 20px 10px 5px;
+  }
+
+  .menu1 {
+    padding-top: 0;
+  }
+}
+
+@media (min-width:719px) and (max-width:1070px) {
+  .bb {
+    width: 11%;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+    color: #355764;
+  }
+
+  .main {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .main-talk {
+    font-size: 2rem;
+    width: 100%;
+    display: inline-block;
+    color: black;
+    margin-bottom: 0;
+  }
+
+  .btn {
+    width: 30%;
+  }
+
+  h4 {
+    color: white;
+  }
+
+  .social {
+    width: 5%;
+  }
+
+  footer {
+    background-color: #90C8AC;
+    position: relative;
+    top: 30px;
+  }
+}
+
+@media (max-width:718px) {
+  .menu a {
+    font-size: 2rem;
+  }
+
+  .bb {
+    width: 7%;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  ul {
+    margin-bottom: 0;
+  }
+
+  .main {
+    margin: 10px 100px 10px;
+    text-align: center;
+  }
+
+  .main-talk {
+    width: 100%;
+    display: inline-block;
+    font-weight: bolder;
+    color: black;
+  }
+
+  .btn {
+    width: 50%;
+  }
+
+  h1 {
+    color: #355764;
+  }
+
+  h4 {
+    color: #C4DFAA;
+  }
+
+  .social {
+    width: 6%;
+  }
+}
+
+@media (max-width:509px) {
+  .menu a {
+    font-size: 1.5rem;
+  }
+
+  .bb {
+    width: 10%;
+  }
+
+  header {
+    padding: 10px 10px;
+  }
+
+  li {
+    padding-top: 0;
+  }
+
+  .main {
+    margin: 10px;
+  }
+
+  .main-talk {
+    width: 100%;
+    display: inline-block;
+    font-weight: bolder;
+    color: black;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width:370px) {
+  footer {
+    background-color: #C4DFAA;
+  }
+}
